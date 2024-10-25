@@ -1,23 +1,129 @@
 @charset "utf-8";
 
+/* importing to font */
+@import url('https://fonts.googleapis.com/css2?family=Song+Myung&display=swap');
+
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+/* Adding to font */
+.song-myung-regular {
+  font-family: "Song Myung", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
+  min-width: 1024px;
   background-color: #323232;
+  -webkit-user-select: none !important;
+  -moz-user-select: -moz-none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
 }
 
-header {
-  padding: 10px 10px 10px 0px;
+.section1 {
   display: block;
-  width: 96%;
-  height: 100px;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 38vh;
+
+  background-image: -webkit-linear-gradient(top, transparent, transparent 1.8em, #535353 0);
+  background-size: 100% 1.9em;
 }
 
-header img {
+.section1 .backSign {
   display: block;
-  width: 70px;
-  height: 70px;
+  position: absolute;
+  top: 35%;
+  left: 29.5%;
+  width: 600px;
+  height: 250px;
+  opacity: 40%;
+}
+
+.section1 .textBox {
+  display: flex;
+  position: relative;
+  color: #DCDCDC;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  z-index: 10;
+}
+
+.section1 .textBox img {
+  display: block;
+  width: 75px;
+  height: 23px;
+}
+
+.section1 .textBox h1 {
+  font-family: 'song-myung-regular', serif;
+  font-size: 100px;
+  letter-spacing: 5px;
+}
+
+.section1 .textBox p {
+  padding-bottom: 25px;
+}
+
+.section1 .textBox .years {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.section1 .textBox .years .y2024 {
+  display: inline-flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: bold;
+  border: solid 2px #DCDCDC;
+  border-radius: 50px;
+  padding: 8px;
+}
+
+.section1 .textBox .years .y2024:hover {
+  color: black;
+  background-color: #ffbe98;
+  border: solid 2px #ffbe98;
+}
+
+.section1 .textBox .years .y2023 {
+  display: inline-flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: bold;
+  border: solid 2px #DCDCDC;
+  border-radius: 50px;
+  padding: 8px;
+}
+
+.section1 .textBox .years .y2023:hover {
+  color: white;
+  background-color: #bb2649;
+  border: solid 2px #bb2649;
+}
+
+.section1 .textBox .years .more {
+  display: inline-flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: bold;
+  border: solid 2px #DCDCDC;
+  border-radius: 50px;
+  padding: 8px;
+}
+
+.section1 .textBox .years .more:hover {
+  color: white;
+  background-color: #ff5a69;
+  border: solid 2px #ff5a69;
 }
