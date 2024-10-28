@@ -25,6 +25,7 @@ body {
   user-select: none !important;
 }
 
+/* header on here */
 header {
   position: fixed;
   display: flex;
@@ -38,7 +39,7 @@ header {
   border-radius: 50px;
   background-color: #32323221;
   backdrop-filter: blur(25px);
-  left: 31%;
+  left: 32.5%;
   gap: 30px;
 }
 
@@ -134,4 +135,18 @@ header .years .more:hover {
 
 header a {
   text-decoration: none;
+}
+
+/* section one on here */
+
+.section1 {
+  display: block;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 38vh;
+
+  background-image: -webkit-linear-gradient(top, transparent, transparent 1.8em, #535353 0);
+  background-size: 100% 1.9em;
 }
